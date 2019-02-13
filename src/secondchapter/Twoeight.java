@@ -9,7 +9,10 @@ public class Twoeight {
         return a;
     }
 
+
+
     public void setA(int[] a) {
+
         this.a = a;
     }
     public void generate1(int len){
