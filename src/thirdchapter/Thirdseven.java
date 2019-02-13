@@ -7,8 +7,8 @@ import java.util.ListIterator;
 
 public class Thirdseven<T> {
 
-        /*public static List<Integer> makelist(int N){
-            List<Integer> lst =new ArrayList<>();
+        /*public static NodeInterface<Integer> makelist(int N){
+            NodeInterface<Integer> lst =new ArrayList<>();
             for(int i=0; i< N; i++){
                 lst.add(i);
                 lst.trimtosize();
