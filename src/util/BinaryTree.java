@@ -57,4 +57,39 @@ public class BinaryTree {
             }
         }
     }
+
+    //插入(选择指定节点插入到左子树)
+    public void insertLeft(Binarynode insertnode,Binarynode value){
+        value.setLeft(insertnode.getLeft());
+        insertnode.setLeft(value);
+    }
+    //右边
+    public void insertRight(Binarynode insertnode,Binarynode value){
+        value.setRight(insertnode.getRight());
+        insertnode.setRight(value);
+    }
+    //树的深度
+    public int depth(Binarynode binarynode){
+        int count=1;
+        Binarynode point=binarynode;
+        while (point!=null){
+            if (point.getLeft()!=null){
+                point=point.getLeft();
+                count++;
+            }
+            else if (point.getRight()!=null){
+                point=point.getRight();
+                count++;
+            }
+            else {
+                break;
+            }
+        }
+        return count;
+    }
+    //查询某数是否在树中
+    public boolean querynode(Binarynode binarynode){
+
+        return false;
+    }
 }
