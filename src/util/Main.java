@@ -5,6 +5,10 @@ public class Main {
         Node node=new Node("abc");
         node.insert(node);
 //        node.printNode();
+        BinaryTree binaryTree=new BinaryTree();
+//        binaryTree.preorder(binaryTree.init());
+        binaryTree.theFirstTraversal_Stack(binaryTree.init());
+
     }
 
 }
