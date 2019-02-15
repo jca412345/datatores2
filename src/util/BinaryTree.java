@@ -151,7 +151,8 @@ public class BinaryTree {
         }
         return binarynode;
     }
-    //删除最小值
+
+    //删除最小值（未完成）
     public Binarynode removeMin(Binarynode binarynode){
         if (binarynode==null)
             return new Binarynode(-1,null,null);
@@ -159,7 +160,7 @@ public class BinaryTree {
         return binarynode;
 
     }
-    //二叉树中删除
+    //二叉树中删除（未完成）
     public Binarynode del(int value,Binarynode binarynode){
         if (binarynode==null)
             return binarynode;
