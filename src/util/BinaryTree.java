@@ -82,7 +82,7 @@ public class BinaryTree {
         value.setRight(insertnode.getRight());
         insertnode.setRight(value);
     }
-    //树的深度
+    //树的深度(错误的写法)
     public int depth(Binarynode binarynode){
         int count=1;
         Binarynode point=binarynode;
