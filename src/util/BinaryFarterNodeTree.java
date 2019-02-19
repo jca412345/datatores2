@@ -53,8 +53,10 @@ public class BinaryFarterNodeTree {
             }
             return 1;
         }
-        else if (value==binaryfarternode.getData()&&binaryfarternode.getFarter()==null){//处理删除你根节点
-
+        else if (value==binaryfarternode.getData()&&binaryfarternode.getFarter()==null){//处理删除根节点
+//            binaryfarternode.setData(value);
+            findMax(binaryfarternode.getLeft());//找出左边最大的节点
+            System.out.println("删除的是根节点");
             return 1;
         }
         else if (value<binaryfarternode.getData()){
@@ -98,6 +100,19 @@ public class BinaryFarterNodeTree {
             return 1+Math.max(left,right);
         }
     }
-    //懒惰删除
+    //二叉树的方式插入
+    public Binaryfarternode insert(int value,Binaryfarternode binaryfarternode,Binaryfarternode binaryfarternode1){
+        if (binaryfarternode==null){
+            return new Binaryfarternode(value,binaryfarternode1,null,null);
+        }
+        if (value<binaryfarternode.getData()){
+            binaryfarternode.setLeft(insert(value,binaryfarternode.getLeft(),binaryfarternode));
+        }
+        else if (value>binaryfarternode.getData()){
+            binaryfarternode.setRight(insert(value,binaryfarternode.getRight(),binaryfarternode));
+        }
+        else ;
+        return binaryfarternode;
+    }
 
 }

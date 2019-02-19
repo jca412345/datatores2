@@ -27,8 +27,10 @@ public class Main2 {
 //        binaryFarterNodeTree.midorder(a);
 //        System.out.println(binaryFarterNodeTree.findMax(a).getData());
 //        System.out.println(binaryFarterNodeTree.findMin(a).getData());
-//        System.out.println(binaryFarterNodeTree.del(5,a));
+        System.out.println(binaryFarterNodeTree.del(5,a));
+        binaryFarterNodeTree.midorder(a);
+//        System.out.println(binaryFarterNodeTree.depth(a));
+//        binaryFarterNodeTree.insert(6,a,a);
 //        binaryFarterNodeTree.midorder(a);
-        System.out.println(binaryFarterNodeTree.depth(a));
-    }
-}
+
+    }}
