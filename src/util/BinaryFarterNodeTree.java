@@ -114,5 +114,12 @@ public class BinaryFarterNodeTree {
         else ;
         return binaryfarternode;
     }
+    //平衡AVL树,同样适合于有关根节点的问题
+    public void balance(Binaryfarternode binaryfarternode){
 
+    }
+    //树的宽度
+    public int wildth(Binaryfarternode binaryfarternode){
+        return 0;
+    }
 }
