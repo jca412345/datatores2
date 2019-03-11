@@ -1,7 +1,5 @@
 package util;
 
-import java.util.Stack;
-
 //avl树
 public class AvlTree {
     private AvlTreeNode root;
@@ -40,14 +38,21 @@ public class AvlTree {
         }
         else return depth(avlTreeNode.getLeft())-depth(avlTreeNode.getRight());
     }
-    //为所有节点设置平衡因子
-    public void midBalace(AvlTreeNode avlTreeNode){
-        if (avlTreeNode==null){
-            System.out.println("此树为空");
+    //插入avltree
+    public AvlTreeNode insert(int value, AvlTreeNode avlTreeNode){
+        if (avlTreeNode==null)
+            return new AvlTreeNode(value,null,null,null);
+        else if (value>avlTreeNode.getData()){
+            avlTreeNode.setRight(insert(value,avlTreeNode.getRight()));
         }
-        Stack<AvlTreeNode> stack=new Stack<>();
-        while (!stack.isEmpty()||avlTreeNode!=null){
+        else if (value<avlTreeNode.getData()){
+            avlTreeNode.setLeft(insert(value,avlTreeNode.getLeft()));
+        }
+        else ;
+        return balance(avlTreeNode);
+    }
 
-        }
+    private AvlTreeNode balance(AvlTreeNode avlTreeNode) {
+        return null;
     }
 }
