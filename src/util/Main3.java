@@ -22,7 +22,7 @@ public class Main3 {
 //        System.out.println(avlTree.depth(a));
 //        a.setHeight(avlTree.depth(a.getLeft())-avlTree.depth(a.getRight()));
 //        System.out.println(a.getHeight());
-        avlTree.midBalace(a);
+//        avlTree.midBalace(a);
         System.out.println(a.getHeight());
     }
 

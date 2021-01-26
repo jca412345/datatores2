@@ -17,4 +17,5 @@ public class Twotwenty {
         System.out.println("这是素数");
         return false;
     }
+
 }
